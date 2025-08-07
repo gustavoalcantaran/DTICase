@@ -92,3 +92,10 @@ Durante o desenvolvimento deste projeto, utilizei assistentes de IA (como o Chat
 
 Essas interações foram usadas como apoio técnico e educacional para resolver dúvidas específicas durante o desenvolvimento, com todo o código sendo compreendido e validado por mim.
 
+### Considerações Finais
+
+Durante o desenvolvimento do projeto, tive diversas ideias que pretendo implementar para evoluir a aplicação. Uma delas seria refatorar o controle de prioridade dos pedidos utilizando o padrão de projeto GoF State, permitindo um controle mais organizado e flexível da lógica de estados dos drones. Inicialmente, usei apenas uma flag busy para indicar se o drone está ocupado, mas acredito que com a implementação de estados mais definidos (como "disponível", "carregando", "em entrega", etc.), o sistema se tornaria mais robusto e fácil de expandir.
+
+Além disso, pensei em melhorar o algoritmo de alocação de drones para os pedidos, utilizando critérios mais eficientes (como distância, bateria, carga já atribuída, etc.), mas ainda não consegui implementar essas ideias por completo, principalmente por ser meu primeiro projeto desse tipo. Foi um desafio novo para mim, especialmente lidando com o React e suas particularidades.
+
+Grande parte do que consegui fazer foi com base em estudos e videoaulas, principalmente do canal Hora de Codar, que me ajudaram bastante a entender e aplicar os conceitos na prática. Tenho consciência de que há muito para melhorar, mas também reconheço o quanto aprendi nesse processo.
