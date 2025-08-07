@@ -13,7 +13,7 @@ function PedidosCard({id , name , peso , locx , locy, prioridade, status, handle
         <div className = {styles.order_card}>
             <h4>{name}</h4>
             <p>
-                <span>Peso : {peso}</span>
+                <span>Peso : {peso} kg</span>
             </p>
             <p>
                 <span>Prioridade : {prioridade.name}</span>

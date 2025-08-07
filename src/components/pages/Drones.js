@@ -4,11 +4,13 @@ import Container from '../layout/Container'
 import DronesCard from '../drones/DronesCard'
 import Linkbutton from '../layout/Linkbutton'
 import Loading from '../layout/Loading'
+import Message from '../layout/Loading'
 
 function Drones(){
 
     const [drones_data,setDrones_data] = useState([]);
     const [removeLoading, setRemoveLoading] = useState(false);
+    const [message, setMessage] = useState('')
 
     function recharge(drone){
         const droneRecarregado = {
@@ -44,15 +46,15 @@ function Drones(){
             setRemoveLoading(true);
         })
         .catch((err) => console.log(err));
-    },[]);
-
+    },[drones_data,message]);
+    
     return (
         <div className = {styles.drones_container}>
             <div className = {styles.tittle_container}>
                 <h1>Drones Disponíveis</h1>
                 <Linkbutton to="/RotaDrone" text = "Calcular Melhor Rota"/>
             </div>
-                <Container customClass = "start">
+                    <Container customClass = "start">
                     {drones_data.length > 0 && 
                     drones_data.map((drone) =>
                         <DronesCard

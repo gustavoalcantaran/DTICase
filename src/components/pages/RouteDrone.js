@@ -2,12 +2,15 @@ import styles from './RouteDrone.module.css'
 import { useState,useEffect } from 'react'
 import RoutesCard from '../routesDrones/RoutesCard'
 import Container from '../layout/Container'
+import Message from '../layout/Message'
 import {getDrones, updateDrones} from '../services/DronesService'
 import { getOrders, updateOrder } from '../services/OrdersService'
 
 function RouteDrone(){
     const [drones,setDrones] = useState([])
     const [orders,setOrders] = useState([])
+    const [message, setMessage] = useState('')
+    const[type, setType] = useState()
 
     function distance(x, y) {
         return Math.sqrt(x * x + y * y) * 2;
@@ -21,9 +24,15 @@ function RouteDrone(){
     function alocPedido(Pedido) {
         Pedido = {...Pedido, status: "Alocado"}
         atualizarPedido(Pedido)
-        }  
+        }
+      
     function concluirPedido(Pedido, Drone) {
         const EntregasReal = Number(Drone.deliveries) + 1;
+        setMessage('') 
+        setTimeout(() => {
+        setMessage('Pedido concluído com Sucesso')
+        setType('success')
+        }, 10)  
         Pedido = {...Pedido, status: "Concluído"}
         atualizarPedido(Pedido)
         atualizarDrone({ ...Drone, busy: false, deliveries: `${EntregasReal}` })
@@ -96,7 +105,6 @@ function RouteDrone(){
             }
         }
     }
-
     useEffect(() =>{
         getDrones()
         .then((data) => {
@@ -118,12 +126,13 @@ function RouteDrone(){
         <div className = {styles.tittle_container}>
             <h1>Pedidos Alocados</h1>
         </div>
-    <Container customClass ="start">{resultado.map((alocation)=>
-        <RoutesCard 
-        droneName = {alocation.drone.name} 
-        orderName = {alocation.name} 
-        status = {alocation.status} 
-        handleChange = {() => concluirPedido(alocation,alocation.drone)}/>
-    )}</Container></div></>)
+        {message && <Message type = {type} msg = {message} />}
+        <Container customClass ="start">{resultado.map((alocation)=>
+            <RoutesCard 
+            droneName = {alocation.drone.name} 
+            orderName = {alocation.name} 
+            status = {alocation.status} 
+            handleChange = {() => concluirPedido(alocation,alocation.drone)}/>
+        )}</Container></div></>)
 }
 export default RouteDrone;

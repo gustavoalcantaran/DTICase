@@ -5,7 +5,7 @@ import Loading from '../layout/Loading'
 import Container from '../layout/Container'
 import OrdersForm from '../orders/OrdersForm'
 import Message from '../layout/Message'
-import {getOrder, getOrderId,updateOrder} from '../services/OrdersService'
+import {getOrderId,updateOrder} from '../services/OrdersService'
 
 
 function Pedido(){
@@ -30,6 +30,25 @@ function Pedido(){
         setMessage('')
         if (!order.locx || !order.locy || order.locx <= 0 || order.locy <= 0){
             setMessage('Localização inválida')
+            setTimeout(()=>{
+                setMessage('');
+            },3000);
+            setType('error')
+            return false
+        }
+        if (order.prioridade.name !== "Média" && order.prioridade.name !== "Alta" && order.prioridade.name !== "Baixa"){
+            setMessage('Prioridade inválida')
+            setTimeout(()=>{
+                setMessage('');
+            },3000);
+            setType('error')
+            return false
+        }
+        if (order.peso > 30 || order.peso < 1){
+            setMessage('Peso inválido')
+            setTimeout(()=>{
+                setMessage('');
+            },3000);
             setType('error')
             return false
         }

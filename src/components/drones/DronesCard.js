@@ -5,16 +5,16 @@ function DronesCard( {name ,id, spmax, kmcarga, battery, handleChange, deliverie
         <div className = {styles.drone_card}>
             <h4>{name}</h4>
             <p>
-                <span>Suporte Máximo : {spmax} </span>
+                <span>Suporte Máximo : {spmax} kg</span>
             </p>
             <p>
-                <span>Quilômetro por Carga: {kmcarga} </span>
+                <span>Alcance: {kmcarga} </span>
             </p>
             <p>
                 <span>Bateria : {battery} </span>
             </p>
             <p>
-                <span>Entregas Realizdas : {deliveries} </span>
+                <span>Entregas Realizadas : {deliveries} </span>
             </p>
             <div className = {styles.drone_card_actions}>
                 <button onClick ={handleChange}>Carregar</button>

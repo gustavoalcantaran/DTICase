@@ -7,7 +7,7 @@
       "kmcarga": "120",
       "battery": "100",
       "busy": false,
-      "deliveries": "1"
+      "deliveries": "0"
     },
     {
       "name": "Cargas Medianas",
@@ -16,7 +16,7 @@
       "kmcarga": "70",
       "battery": "100",
       "busy": false,
-      "deliveries": "2"
+      "deliveries": "0"
     },
     {
       "name": "Cargas Pesadas",
@@ -25,7 +25,7 @@
       "kmcarga": "30",
       "battery": "100",
       "busy": false,
-      "deliveries": "3"
+      "deliveries": "0"
     }
   ],
   "orders": [
@@ -44,8 +44,8 @@
     {
       "id": "d8d7",
       "name": "Roupas",
-      "peso": "20",
-      "locx": "10",
+      "peso": "30",
+      "locx": "8",
       "locy": "9",
       "prioridade": {
         "id": "2",
@@ -67,13 +67,13 @@
     },
     {
       "id": "bf9c",
-      "name": "Eletrodoméstico",
+      "name": "Eletrodomésticos",
       "peso": "30",
       "locx": "1",
       "locy": "8",
       "prioridade": {
-        "id": "2",
-        "name": "Média"
+        "id": "1",
+        "name": "Baixa"
       },
       "status": "Em espera"
     },
@@ -86,6 +86,90 @@
       "prioridade": {
         "id": "1",
         "name": "Baixa"
+      },
+      "status": "Em espera"
+    },
+    {
+      "id": "6e0b",
+      "name": "Variados 1",
+      "peso": "6",
+      "locx": "3",
+      "locy": "14",
+      "prioridade": {
+        "id": "1",
+        "name": "Baixa"
+      },
+      "status": "Em espera"
+    },
+    {
+      "id": "89a5",
+      "name": "Variados 2",
+      "peso": "10",
+      "locx": "2",
+      "locy": "9",
+      "prioridade": {
+        "id": "2",
+        "name": "Média"
+      },
+      "status": "Em espera"
+    },
+    {
+      "id": "9733",
+      "name": "Cosméticos",
+      "peso": "5",
+      "locx": "1",
+      "locy": "6",
+      "prioridade": {
+        "id": "1",
+        "name": "Baixa"
+      },
+      "status": "Em espera"
+    },
+    {
+      "id": "b26e",
+      "name": "Utensílios Domésticos",
+      "peso": "10",
+      "locx": "9",
+      "locy": "8",
+      "prioridade": {
+        "id": "1",
+        "name": "Baixa"
+      },
+      "status": "Em espera"
+    },
+    {
+      "id": "e1c9",
+      "name": "Supermercados 1",
+      "peso": "9",
+      "locx": "1",
+      "locy": "3",
+      "prioridade": {
+        "id": "1",
+        "name": "Baixa"
+      },
+      "status": "Em espera"
+    },
+    {
+      "id": "a5d6",
+      "name": "Supermercado 2",
+      "peso": "10",
+      "locx": "2",
+      "locy": "3",
+      "prioridade": {
+        "id": "1",
+        "name": "Baixa"
+      },
+      "status": "Em espera"
+    },
+    {
+      "id": "9e87",
+      "name": "Coisas Pesadas 1",
+      "peso": "27",
+      "locx": "3",
+      "locy": "4",
+      "prioridade": {
+        "id": "2",
+        "name": "Média"
       },
       "status": "Em espera"
     }
