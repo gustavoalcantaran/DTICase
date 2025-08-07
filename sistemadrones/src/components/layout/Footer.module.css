@@ -1,0 +1,15 @@
+.footer{
+    background-color : chocolate;
+    color : black;
+    padding : 3em;
+    text-align: center;
+}
+
+.copy_rigth{
+    font-weight:bold;
+    color : white;
+}
+
+.copy_rigth span{
+    color : black;
+}

@@ -1,0 +1,107 @@
+{
+  "drones": [
+    {
+      "name": "Cargas Leves",
+      "id": "1",
+      "spmax": "5",
+      "kmcarga": "120",
+      "battery": "100",
+      "busy": false,
+      "deliveries": "1"
+    },
+    {
+      "name": "Cargas Medianas",
+      "id": "2",
+      "spmax": "12",
+      "kmcarga": "70",
+      "battery": "100",
+      "busy": false,
+      "deliveries": "2"
+    },
+    {
+      "name": "Cargas Pesadas",
+      "id": "3",
+      "spmax": "30",
+      "kmcarga": "30",
+      "battery": "100",
+      "busy": false,
+      "deliveries": "3"
+    }
+  ],
+  "orders": [
+    {
+      "id": "f7f9",
+      "name": "Sapato",
+      "peso": "5",
+      "locx": "10",
+      "locy": "20",
+      "prioridade": {
+        "id": "1",
+        "name": "Baixa"
+      },
+      "status": "Em espera"
+    },
+    {
+      "id": "d8d7",
+      "name": "Roupas",
+      "peso": "20",
+      "locx": "10",
+      "locy": "9",
+      "prioridade": {
+        "id": "2",
+        "name": "Média"
+      },
+      "status": "Em espera"
+    },
+    {
+      "id": "378e",
+      "name": "Medicamentos",
+      "peso": "3",
+      "locx": "2",
+      "locy": "10",
+      "prioridade": {
+        "id": "3",
+        "name": "Alta"
+      },
+      "status": "Em espera"
+    },
+    {
+      "id": "bf9c",
+      "name": "Eletrodoméstico",
+      "peso": "30",
+      "locx": "1",
+      "locy": "8",
+      "prioridade": {
+        "id": "2",
+        "name": "Média"
+      },
+      "status": "Em espera"
+    },
+    {
+      "id": "cfb5",
+      "name": "Peças automotivas",
+      "peso": "20",
+      "locx": "2",
+      "locy": "10",
+      "prioridade": {
+        "id": "1",
+        "name": "Baixa"
+      },
+      "status": "Em espera"
+    }
+  ],
+  "prioridades": [
+    {
+      "id": "1",
+      "name": "Baixa"
+    },
+    {
+      "id": "2",
+      "name": "Média"
+    },
+    {
+      "id": "3",
+      "name": "Alta"
+    }
+  ]
+}

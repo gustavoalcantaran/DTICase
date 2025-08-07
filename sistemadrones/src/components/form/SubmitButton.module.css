@@ -1,0 +1,14 @@
+.button{
+    background-color : chocolate;
+    color: black;
+    border-radius: 3px;
+    text-decoration: nome;
+    transition: 0.5s;
+    padding: 0.7em 1.2em;
+    cursor: pointer;
+    border: none;
+}
+
+.button:hover{
+    color:white;
+}

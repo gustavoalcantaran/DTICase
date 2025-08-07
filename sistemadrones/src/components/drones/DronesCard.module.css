@@ -1,0 +1,55 @@
+.drone_card{
+    padding: 1em;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 24%;
+    margin: 0.5%;
+}
+.drone_card:hover{
+    background-color: rgba(150, 149, 149, 0.297);
+    color: black;
+    transition: 0.5s;
+}
+.drone_card h4{
+    background-color: black;
+    color: chocolate;
+    padding: 0.5em;
+    margin-bottom: 1.3em;
+    font-size: 1.3em;
+}
+.drone_card p{
+    margin-bottom: 1em;
+    color: #7a7a7a
+}
+.drone_card p span{
+    font-weight: bold;
+}
+.drone_card_actions{
+    margin-top: 1.2ex;
+    display : flex;
+    align-items: center;
+}
+.drone_card_actions a,
+.drone_card_actions button{
+    text-decoration: none;
+    border: none;
+    background-color:white;
+    color: black;
+    font-size: .9em;
+    padding: .6em 1em;
+    margin-right: 1em;
+    cursor: pointer;
+    border: 1px solid black;
+    display: flex;
+    align-items : center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.drone_card_actions svg{
+    margin-right: .5em;
+}
+.drone_card_actions a:hover,
+.drone_card_actions button:hover{
+    background-color: black;
+    color: chocolate;
+}

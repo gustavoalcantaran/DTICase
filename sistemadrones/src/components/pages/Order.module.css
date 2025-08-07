@@ -1,0 +1,47 @@
+.order_details{
+    padding: 2em;
+}
+
+.order_details h2,
+.order_details p,
+.order_details h1{
+    margin-bottom : 0.5em;
+}
+
+.order_details h1{
+    background-color : chocolate;
+    color : black;
+    padding : .4em;
+}
+
+.order_details span{
+    font-weight : bold;
+}
+
+.details_container,
+.service_form_container{
+    border-bottom: 1px solid black;
+    margin-bottom : 1.2em;
+    padding-bottom: 1.2em;
+    display : flex;
+    justify-content: space-between;
+    flex-wrap : wrap;
+
+}
+.button{
+    background-color:chocolate;
+    color:black;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    max-height : 40px;
+    border: none;
+}
+.button:hover{
+    color: white;
+}
+.orderInfo{
+    width: 100%;
+}
