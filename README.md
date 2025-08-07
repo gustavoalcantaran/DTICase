@@ -20,7 +20,7 @@ git clone https://github.com/gustavoalcantaran/DTICase.git
 
 ###2.Abra o terminal na pasta onde o repositório foi clonado e instale as dependências e depois rode o programa
 
-npm install
+npm install  
 npm start
 
 ###3.Abra outro terminal na mesma pasta para rodar o backend
