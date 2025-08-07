@@ -98,4 +98,6 @@ Durante o desenvolvimento do projeto, tive diversas ideias que pretendo implemen
 
 Além disso, pensei em melhorar o algoritmo de alocação de drones para os pedidos, utilizando critérios mais eficientes (como distância, bateria, carga já atribuída, etc.), mas ainda não consegui implementar essas ideias por completo, principalmente por ser meu primeiro projeto desse tipo. Foi um desafio novo para mim, especialmente lidando com o React e suas particularidades.
 
+Pensei também em aprimorar a simulação da bateria do drone, fazendo com que quando eu entre na página dos drones, o usuário receba uma mensagem caso o drone esteja com a bateria inferior a 10% ou caso ele não possa fazer nenhuma entrega por conta da bateria, ou fazer com que o drone recarregue sozinho nesses casos.
+
 Grande parte do que consegui fazer foi com base em estudos e videoaulas, principalmente do canal Hora de Codar, que me ajudaram bastante a entender e aplicar os conceitos na prática. Tenho consciência de que há muito para melhorar, mas também reconheço o quanto aprendi nesse processo.
